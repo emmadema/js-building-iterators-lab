@@ -10,12 +10,13 @@ var myReduce = require('./myReduce');
 var numArray = [0,1,10,100,1000];
 
 
-/* myEach */
-
 //
-/*myEach(numArray, function print(element, index, arr) {
-   console.log('inside myEach', element, index, arr);
- });*/
+myEach(numArray, function print(element, index, arr) {
+	for(let i =0; i < arr.length; i++){
+	callback(arr[i], i, arr);	
+   console.log('inside myEach', element, index, arr);}
+ });
+
 
 
 
